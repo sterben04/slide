@@ -20,7 +20,7 @@ class _DayState extends State<Day> {
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(25.0)),
             child: Text(
-              'Day',
+              'Day \n 01',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 18),
             ),
@@ -36,7 +36,7 @@ class _DayState extends State<Day> {
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(25.0)),
             child: Text(
-              'Day',
+              'Day \n 02',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 18),
             ),
@@ -52,7 +52,7 @@ class _DayState extends State<Day> {
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(25.0)),
             child: Text(
-              'Day',
+              'Day\n 03',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 18),
             ),
