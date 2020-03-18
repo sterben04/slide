@@ -10,15 +10,21 @@ class Slide extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text(
-            'Timeline',
-            style: TextStyle(fontSize: 25.0, color: Colors.indigo[900]),
+          title: Padding(
+            padding: EdgeInsets.only(top: 40.0,),
+            child: Text(
+              'Timeline',
+              style: TextStyle(fontSize: 25.0, color: Colors.indigo[900]),
+            ),
           ),
           backgroundColor: Colors.grey[200],
           titleSpacing: 40.0,
-          bottom: PreferredSize(child: Container(), preferredSize: Size(10, 70)),
-        elevation: 10.0,),
+          bottom: PreferredSize(child: Container(), preferredSize: Size(10, 80)),
+          elevation: 10.0,
+        ),
       ),
     );
+
+    
   }
 }
