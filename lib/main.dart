@@ -16,7 +16,8 @@ class Slide extends StatelessWidget {
           ),
           backgroundColor: Colors.grey[200],
           titleSpacing: 40.0,
-        ),
+          bottom: PreferredSize(child: Container(), preferredSize: Size(10, 70)),
+        elevation: 10.0,),
       ),
     );
   }
