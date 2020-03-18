@@ -19,7 +19,15 @@ class Slide extends StatelessWidget {
           ),
           backgroundColor: Colors.grey[200],
           titleSpacing: 40.0,
-          bottom: PreferredSize(child: Container(), preferredSize: Size(10, 80)),
+          bottom: PreferredSize(child: Container(
+            padding: EdgeInsets.all(30),
+            child: Column(
+              children:<Widget>[
+               
+                RaisedButton(onPressed: null,shape:  ,),
+              ],
+            ),
+          ), preferredSize: Size(10, 80)),
           elevation: 10.0,
         ),
       ),
