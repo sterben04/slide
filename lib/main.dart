@@ -11,7 +11,9 @@ class Slide extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Padding(
-            padding: EdgeInsets.only(top: 40.0,),
+            padding: EdgeInsets.only(
+              top: 37.0,
+            ),
             child: Text(
               'Timeline',
               style: TextStyle(fontSize: 25.0, color: Colors.indigo[900]),
@@ -19,20 +21,31 @@ class Slide extends StatelessWidget {
           ),
           backgroundColor: Colors.grey[200],
           titleSpacing: 40.0,
-          bottom: PreferredSize(child: Container(
-            padding: EdgeInsets.all(30),
-            child: Column(
-              children:<Widget>[
-               
-                RaisedButton(onPressed: null,shape:  ,),
-              ],
-            ),
-          ), preferredSize: Size(10, 80)),
+          bottom: PreferredSize(
+              child: Container(
+                child: Row(
+                  children: <Widget>[
+                    Padding(padding: EdgeInsets.all(10.0)),
+                    ButtonTheme(
+                      minWidth: 45,
+                      height: 65,
+                      child: RaisedButton(
+                        onPressed: null,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(25.0)),
+                        child: Text(
+                          'Day',
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              preferredSize: Size(10, 90)),
           elevation: 10.0,
         ),
       ),
     );
-
-    
   }
 }
