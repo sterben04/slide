@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class Day extends StatefulWidget {
- 
-
   @override
   _DayState createState() => _DayState();
 }
@@ -10,8 +8,57 @@ class Day extends StatefulWidget {
 class _DayState extends State<Day> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-       
+    return Row(
+      children: <Widget>[
+        Padding(padding: EdgeInsets.only(left: 80)),
+        ButtonTheme(
+          minWidth: 45,
+          height: 65,
+          child: RaisedButton(
+            onPressed: () {},
+            color: Colors.grey[100],
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25.0)),
+            child: Text(
+              'Day',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 18),
+            ),
+          ),
+        ),
+        Padding(padding: EdgeInsets.only(left: 15)),
+        ButtonTheme(
+          minWidth: 45,
+          height: 65,
+          child: RaisedButton(
+            onPressed: () {},
+            color: Colors.grey[100],
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25.0)),
+            child: Text(
+              'Day',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 18),
+            ),
+          ),
+        ),
+        Padding(padding: EdgeInsets.only(left: 15)),
+        ButtonTheme(
+          minWidth: 45,
+          height: 65,
+          child: RaisedButton(
+            onPressed: () {},
+            color: Colors.grey[100],
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(25.0)),
+            child: Text(
+              'Day',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 18),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
