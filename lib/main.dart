@@ -21,7 +21,7 @@ class Slide extends StatelessWidget {
               style: TextStyle(
                   fontSize: 25.0,
                   color: Colors.indigo[900],
-                  fontWeight: FontWeight.bold),
+                  fontWeight: FontWeight.w800),
             ),
           ),
           backgroundColor: Colors.grey[200],
@@ -29,10 +29,11 @@ class Slide extends StatelessWidget {
           bottom: PreferredSize(
               child: Container(
                 child: Day(),
-                padding: EdgeInsets.only(bottom: 10),
+                padding: EdgeInsets.only(bottom: 15),
               ),
-              preferredSize: Size(10, 105)),
-          elevation: 10.0,
+              preferredSize: Size(10, 115)),
+          elevation: 0.0,
+         
         ),
       ),
     );
