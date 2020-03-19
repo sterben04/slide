@@ -4,13 +4,11 @@ import './day1.dart';
 import './day2.dart';
 import './day3.dart';
 
-class Day extends StatefulWidget {
-  @override
-  _DayState createState() => _DayState();
-}
+var c=0;
+class Day extends StatelessWidget {
+  
 
-class _DayState extends State<Day> {
-  var c = 0;
+  
   @override
   Widget build(BuildContext context) {
     return Row(
