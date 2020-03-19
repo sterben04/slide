@@ -35,6 +35,7 @@ class Slide extends StatelessWidget {
           elevation: 0.0,
          
         ),
+        body: ,
       ),
     );
   }
