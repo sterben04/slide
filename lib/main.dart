@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './day.dart';
+import './day1.dart';
 
 void main() {
   runApp(Slide());
@@ -35,7 +36,7 @@ class Slide extends StatelessWidget {
           elevation: 0.0,
          
         ),
-        body: ,
+        body: Day1(),
       ),
     );
   }
