@@ -11,21 +11,21 @@ class Event extends StatelessWidget {
       margin: EdgeInsets.fromLTRB(30, 10, 0, 20),
       padding: EdgeInsets.fromLTRB(20, 10, 0, 20),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(20)),
-          color: Colors.red,
+          borderRadius: BorderRadius.all(Radius.circular(30)),
+          color: Colors.deepPurpleAccent[400],
           shape: BoxShape.rectangle,
           image: DecorationImage(
-              image: AssetImage('./images/roboSoccer.jfif'),
-              fit: BoxFit.contain)),
+              image: AssetImage('./images/roboSoccer.jpg'),
+              fit: BoxFit.cover)),
       child: RichText(
         text: TextSpan(
           text: (_eventName[count]),
           style: TextStyle(
-              fontWeight: FontWeight.bold, color: Colors.black, fontSize: 20),
+              fontWeight: FontWeight.bold, color: Colors.white, fontSize: 20),
           children: <TextSpan>[
             TextSpan(
                 text: _content[count],
-                style: TextStyle(color: Colors.blue, fontSize: 14)),
+                style: TextStyle(color: Colors.white, fontSize: 14,fontWeight:FontWeight.normal )),
           ],
         ),
       ),
