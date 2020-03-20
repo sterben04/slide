@@ -134,7 +134,7 @@ class _SlideState extends State<Slide> {
           elevation: 0.0,
          
         ),
-        body: c==1?Day1(): c==2?Day2():c==3?Day3():Day1(),
+        body: c==1?Day1(): c==2?Day2():Day3(),
         
       ),
     );
