@@ -7,11 +7,16 @@ class Event extends StatelessWidget {
   Event(this._content, this._eventName, this.count);
   @override
   Widget build(BuildContext context) {
-    return Container(width: 450.0,
+    return Container(width: 650.0,
       margin: EdgeInsets.fromLTRB(30, 10, 0, 20),
-      padding: EdgeInsets.fromLTRB(20, 10, 0, 20),
+      padding: EdgeInsets.fromLTRB(20, 30, 0, 20),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(30)),
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(30.0),
+                    topRight: Radius.zero,
+                    bottomLeft: Radius.circular(30),
+                    bottomRight: Radius.zero,
+          ),
           color: Colors.deepPurpleAccent[400],
           shape: BoxShape.rectangle,
           image: DecorationImage(

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 
 
-//import './day.dart';
 import './day1.dart';
 import './day2.dart';
 import './day3.dart';
